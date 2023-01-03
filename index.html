@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBO MAX CLONE</title> <link rel="stylesheet" href="./styles.css">
+  <script src="./index.js" defer></script>
+  <script src="https://kit.fontawesome.com/67845e30d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <img class="nav__bc--img" src="https://hbomax-images.warnermediacdn.com/2022-12/NewMovingHeroImage_2022-12-16.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com" alt="">
+  <nav>
+      <div class="nav__container">
+     <div class="nav__img--wrapper">
+      <img class="nav__img" src="https://play.hbomax.com/40f1ec3e7380accdae648d90d4366e8f.png" alt="">
+     </div>
+     <ul class="nav__link--list">
+      <li ><a class="nav__link" href="">LOG IN</a></li>
+      <button class="nav__btn">SUBSCRIBE NOW</button>
+     </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="header__container">
+    <h1 class="nav__title">
+      SAY HELLO TO EVERYTHING YOU LOVE
+    </h1>
+    <form class="search-container">
+      <input type="text" id="search-bar" placeholder="Find your movie here" onkeyup="searchMovie()"> 
+      <a href="#searched" class="scroll-link"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+    </form> 
+  </div>
+ 
+</header>
+</section>
+
+
+
+<section id="movies">
+ <div class="container">
+  <div class="row">
+    <h3 class="movie-title">FEATURED MOVIES</h3>
+    <div class="movie-list">
+      <div class="movie-template">
+        <figure>
+      <img src="https://hbomax-images.warnermediacdn.com/images/GY2P7nwk70IGhwwEAAADH/tileburnedin?size=1280x720&partner=hbomaxcom&v=46a1b785172d2ab43e93339e521f20cf&host=art-gallery.api.hbo.com&language=nl-nl&w=1280" alt="" class="movie-poster">
+       </figure>
+    </div>
+      <div class="movie-template">
+        <figure>
+          <img src="//hbomax-images.warnermediacdn.com/images/GYY7NkAImuJzDwgEAAAAL/tileburnedin?size=1280x720&partner=hbomaxcom&v=81839585ba67147d9021d015412c530f&host=art-gallery.api.hbo.com&language=nl-nl&w=1280" alt="" class="movie-poster">
+        </figure>
+        </div>
+        <div class="movie-template">
+          <figure>
+          <img src="//hbomax-images.warnermediacdn.com/images/GXdu2ZAglVJuAuwEAADbA/tileburnedin?size=1280x720&partner=hbomaxcom&v=44a146b107d9a08f4ea585296a2e811a&host=art-gallery.api.hbo.com&language=nl-nl&w=1280" alt="" class="movie-poster">
+        </figure>
+        </div>
+        <div class="movie-template">
+          <figure>
+          <img src="//hbomax-images.warnermediacdn.com/images/GXdu2UAyz4JuAuwEAADag/tileburnedin?size=1280x720&partner=hbomaxcom&v=e12904b92477ca1bd3e6be70aaf93703&host=art-gallery.api.hbo.com&language=nl-nl&w=1280" alt="" class="movie-poster">
+        </figure>
+        </div>
+        <div class="movie-template">
+       <figure>
+          <img src="//hbomax-images.warnermediacdn.com/images/GY2QUhg4BOJ_DwgEAAAD-/tileburnedin?size=1280x720&partner=hbomaxcom&v=cd6a481b225f46251f89cd4d68b057b3&host=art-gallery.api.hbo.com&language=nl-nl&w=1280" alt="" class="movie-poster">
+        </figure>
+        </div>
+        <div class="movie-template">
+          <figure>
+          <img src="https://hbomax-images.warnermediacdn.com/images/GYVa1tgIVjinDwwEAAABA/tileburnedin?size=640x360&partner=hbomaxcom&v=db9862bb9c70fa382434b73bc9e04db2&host=art-gallery.api.hbo.com&language=nl-nl&w=640" alt="" class="movie-poster">
+        </figure>
+        </div>
+         
+    </div>
+  </div>
+ </div>
+</section>
+
+
+
+
+
+<section id="searched">
+  <div class="container">
+    <div class="row">
+    <h3 class="searched__title">
+
+    </h3>
+    <div class="searched__list">
+      <div class="searched__template">
+        <figure>
+          <img class="searched__img" src="" alt="">
+           <p class="searched__name"></p>
+        </figure>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</section>
+</body>
+</html>

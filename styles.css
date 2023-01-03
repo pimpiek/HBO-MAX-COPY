@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: relative;
+  z-index: 100;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* https://play.hbomax.com/40f1ec3e7380accdae648d90d4366e8f.png */
+
+/* NAVIGATION */
+
+nav {
+  background-color: rgba(0,0,0, 0.4);
+  padding: 12px 16px;
+  z-index: 20;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__img--wrapper {
+  width: 100%;
+}
+
+.nav__img {
+  width: 10%;
+
+}
+
+.nav__link--list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  white-space: nowrap;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin-right: 28px;
+  font-size: 14px;
+}
+
+.nav__btn {
+  white-space: nowrap;
+  padding: 10px 40px;
+  background-color: rgb(181, 53, 246);
+  color: #fff;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bolder;
+  transition: all 300ms ease;
+}
+
+.nav__btn:hover {
+  background-color: #fff;
+  color: rgb(181, 53, 246);
+}
+
+
+
+.nav__bc--img {
+  position: absolute;
+  width: 200%;
+  height: 60vh;
+  background-image: url("https://hbomax-images.warnermediacdn.com/2022-12/NewMovingHeroImage_2022-12-16.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
+  overflow: hidden;
+  z-index: -1;
+  animation: slide 3s linear infinite alternate;
+  animation-duration: 30000ms;
+  object-fit: cover;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-50%);
+  }
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: #221C35;
+  width: 100%;
+  height: 50vh;
+  
+}
+
+.nav__title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 42px;
+  margin-bottom: 36px;
+  text-shadow: 4px 4px black;
+}
+
+
+#search-bar {
+  padding: 16px 200px 16px 16px;
+  border-radius: 9999px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 58%;
+  top: 56%;
+  color: #000;
+  font-size: 24px;
+}
+
+/* FEATURED */
+
+#movies {
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://hbomax-images.warnermediacdn.com/2022-12/BlackAdam_desktop_gradient_at_the_bottom.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=2500")
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.movie-title {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 4px 4px black;
+  padding-bottom: 32px;
+}
+
+.movie-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+ 
+}
+
+.movie-template {
+  width: calc(100% / 5.5);
+  margin-right: 48px;
+  margin-bottom: 64px;
+  box-shadow: 6px 6px rgba(0,0,0, 0.6);
+  transition: all 300ms ease;
+
+}
+
+.movie-template:hover {
+  transform: scale(1.2);
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+
+/* SEARCHED */
+
+#searched {
+  width: 100%;
+  height: 50vh;
+  background-image: url("https://hbomax-images.warnermediacdn.com/2021-07/email_background_final%20%281%29.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=2559");
+  background-repeat: no-repeat;
+}
+
+
+
+
